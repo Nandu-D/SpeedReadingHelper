@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TableRow>
+                    <TextView
+                        android:text="Step 1"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Look at a line as having three sections"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"/>
+                </TableRow>
+            </TableLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/step2_title"
+                    android:text="Step2 " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/step2_explanation"
+                    android:layout_below="@id/step2_title"
+                    android:text="Identify the center point of each section" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:text="Step 3"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:text="Start at the first word at the center of first section on the line"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:text="Step 4"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:text="Scan the line with your eye jumping from the center word of first section to the center word of second section and finally to the center word of third section. Repeat the above steps for each line."
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <TextView
+                    android:text="Step 5"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+                <TextView
+                    android:text=""
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
