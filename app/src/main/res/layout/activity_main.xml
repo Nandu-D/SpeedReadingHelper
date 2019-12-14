@@ -30,7 +30,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true">
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="3dp">
 
                     <TextView
                         android:id="@+id/introduction_title_text_view"
@@ -39,16 +40,17 @@
                         android:layout_above="@id/introduction_description_text_view"
                         android:layout_alignParentStart="true"
                         android:layout_alignParentLeft="true"
+                        style="@style/TitleTextView"
                         android:layout_alignParentTop="true"
                         android:gravity="center"
-                        android:text="Introduction" />
+                        android:text="@string/introduction" />
 
                     <ImageButton
                         android:id="@+id/introduction_expand_button"
+                        style="@style/ImageButtonStyle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentTop="true"
-                        style="@style/ImageButtonStyle"
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentRight="true"
                         android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
@@ -59,7 +61,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@id/introduction_expand_button"
                         android:layout_alignParentLeft="true"
-                        android:text="Speed reading evolved from our understanding of how we read. When we read our eyes does not go from one end of the line to the other in a single movement, it jumps from one point to another, then the next, repeating  till the end. But we feel our reading is smooth because of our peripheral vision. Speed reading is an optimisation to our natural reading method" />
+                        android:text="@string/intro_description" />
                 </RelativeLayout>
 
                 <LinearLayout
@@ -69,6 +71,7 @@
                     android:layout_below="@id/introduction_relative_layout"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="3dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -81,13 +84,14 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Step 1" />
+                            style="@style/TitleTextView"
+                            android:text="@string/step_1" />
 
                         <ImageButton
                             android:id="@+id/step1_expand_button"
+                            style="@style/ImageButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            style="@style/ImageButtonStyle"
                             android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
                     </LinearLayout>
 
@@ -95,7 +99,7 @@
                         android:id="@+id/step1_explanation_text_view"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="See each line as having 3 sections. Imagine an invisible dividing line if it helps. So when reading a line 'The weather is good to go skiing', imagine three sections. So splitting the line into the parts 'The weather', 'is good to' and 'go skiing' will achieve the goal" />
+                        android:text="@string/step1_description" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -104,8 +108,9 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/step1_relative_layout"
                     android:layout_alignParentStart="true"
-                    android:orientation="vertical"
-                    android:layout_alignParentLeft="true">
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="3dp"
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -117,14 +122,15 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
+                            style="@style/TitleTextView"
                             android:layout_weight="1"
-                            android:text="Step 2" />
+                            android:text="@string/step_2" />
 
                         <ImageButton
                             android:id="@+id/step2_expand_button"
+                            style="@style/ImageButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            style="@style/ImageButtonStyle"
                             android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
                     </LinearLayout>
 
@@ -133,7 +139,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Identify the center point of each section. Following the previous example you can choose 'weather', 'good' and 'go' as center points to focus. Once this step is done you will get an idea of the approximate position of where to look for center words, in the invisible sections, for each line" />
+                        android:text="@string/step2_description" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -143,6 +149,7 @@
                     android:layout_below="@id/step2_linear_layout"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="3dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -155,13 +162,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Step 3" />
+                            android:text="@string/step_3" />
 
                         <ImageButton
                             android:id="@+id/step3_expand_button"
+                            style="@style/ImageButtonStyle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            style="@style/ImageButtonStyle"
                             android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
                     </LinearLayout>
 
@@ -169,7 +176,7 @@
                         android:id="@+id/step3_explanation_text_view"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Fix your vision on the first center point, then jump to the next and complete the line by jumping to the last one. Again following from the above example, you will be looking at the words 'weather', 'good' and 'go' in succession. After the first line follow this pattern to read the entire text. With practice you will be able to read text at a very impressive speed" />
+                        android:text="@string/step3_description" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -179,6 +186,7 @@
                     android:layout_below="@id/step3_relative_layout"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="3dp"
                     android:orientation="vertical">
 
                     <LinearLayout
@@ -191,12 +199,13 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="Things to keep in mind" />
+                            style="@style/TitleTextView"
+                            android:text="@string/things_to_keep_in_mind" />
 
                         <ImageButton
                             android:id="@+id/things_to_keep_in_mind_expand_button"
-                            android:layout_width="wrap_content"
                             style="@style/ImageButtonStyle"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
                     </LinearLayout>
@@ -205,7 +214,7 @@
                         android:id="@+id/things_to_keep_in_mind_description_text_view"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="It is extremely useful to know what slows your reading on your journey to be a speed reader. One is vocalising the words we read in our mind. Second is going back and forth while reading. Don't read a line over and over again, you should aim to always go forward" />
+                        android:text="@string/things_to_keep_in_mind_description" />
                 </LinearLayout>
             </RelativeLayout>
         </FrameLayout>

@@ -3,5 +3,5 @@
     <SwitchPreference
         android:key="@string/switch_key"
         android:title="Allow expand all"
-        android:summary="If unchecked only one step shows description, otherwise one or more steps can show its description at the same time"/>
+        android:summary="@string/preference_summary"/>
 </PreferenceScreen>

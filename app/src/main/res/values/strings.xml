@@ -5,4 +5,15 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="settingsAppBarTitle">Settings</string>
     <string name="switch_key">allow_expand_all</string>
+    <string name="introduction">Introduction</string>
+    <string name="intro_description">Speed reading evolved from our understanding of how we read. When we read our eyes does not go from one end of the line to the other in a single movement, it jumps from one point to another, then the next, repeating till the end. But we feel our reading is smooth because of our peripheral vision. Speed reading is an optimisation to our natural reading method</string>
+    <string name="step_1">Step 1</string>
+    <string name="step1_description">See each line as having 3 sections. Imagine an invisible dividing line if it helps. So when reading a line \'The weather is good to go skiing\', imagine three sections. So splitting the line into the parts \'The weather\', \'is good to\' and \'go skiing\' will achieve the goal</string>
+    <string name="step_2">Step 2</string>
+    <string name="step2_description">Identify the center point of each section. Following the previous example you can choose \'weather\', \'good\' and \'go\' as center points to focus. Once this step is done you will get an idea of the approximate position of where to look for center words, in the invisible sections, for each line</string>
+    <string name="step_3">Step 3</string>
+    <string name="step3_description">Fix your vision on the first center point, then jump to the next and complete the line by jumping to the last one. Again following from the above example, you will be looking at the words \'weather\', \'good\' and \'go\' in succession. After the first line follow this pattern to read the entire text. With practice you will be able to read text at a very impressive speed</string>
+    <string name="things_to_keep_in_mind">Things to keep in mind</string>
+    <string name="things_to_keep_in_mind_description">It is extremely useful to know what slows your reading on your journey to be a speed reader. One is vocalising the words we read in our mind. Second is going back and forth while reading. Don\'t read a line over and over again, you should aim to always go forward</string>
+    <string name="preference_summary">If unchecked only one step shows description, otherwise one or more steps can show its description at the same time</string>
 </resources>
