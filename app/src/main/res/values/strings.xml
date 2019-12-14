@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SpeedReadingHelper</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settingsAppBarTitle">Settings</string>
+    <string name="switch_key">allow_expand_all</string>
 </resources>
